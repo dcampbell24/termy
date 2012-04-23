@@ -66,7 +66,7 @@ func main() {
 	}
 	for i := range clr {
 		fmt.Printf("%s%-7s ",  TextColor(RESET, i, -1), clr[i])
-		for j := 0; j < 8; j++ {
+		for j := range clr {
 			fmt.Printf("%s%s ", TextColor(RESET, j, i), clr[j])
 		}
 		fmt.Println(TextColor(RESET, -1, -1))
