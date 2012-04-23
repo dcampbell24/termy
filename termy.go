@@ -74,6 +74,7 @@ func main() {
 	width, height, err := GetSize()
 	if err != nil {
 		fmt.Println("termy: failed to get window dimensions:", err)
+	} else {
+		fmt.Printf("Width: %d\nHeight: %d\n", width, height)
 	}
-	fmt.Printf("Width: %d\nHeight: %d\n", width, height)
 }
